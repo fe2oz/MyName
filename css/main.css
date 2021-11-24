@@ -1,0 +1,86 @@
+
+        body{
+            background-color:black;
+            width:100%;
+        }
+
+        header{
+            width:10%; 
+            height:100%; 
+            background-color:#131313;
+            position:fixed;
+            z-index:10;
+        }
+        .menu_icon{
+            width:200px;
+            margin:0;
+            filter: opacity(0.5) drop-shadow(0 0 0 darkred);
+        }
+        .menu_icon img{
+            width:35px;
+            height:35px;
+        }
+        .main_menu{
+            width:200px; 
+            height:100%;
+            
+            background-color:#131313;
+        }
+        .main_menu li a{
+            color:#e5e5e5;
+            text-decoration: none;
+            font-family: 'YeolrinGothic-Light';
+            font-weight: normal;
+            padding:20px;
+            display:block;
+        }
+        
+        .main_menu li ul li{
+            display:block;
+            
+            padding-left:10px;
+        }
+        .main_menu li ul li a:hover{
+            background-color:darkred;
+        }
+        .main_menu li ul li a{
+            border-left:1px solid gray;
+        }
+
+        .section{
+            width:90%;
+            height:100%;
+            margin-left:186px;
+            position:absolute;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .test{
+            position:absolute;
+            top:40%;
+            left:30%;
+            filter: invert(1);
+            animation:test1 1s infinite;
+        }
+
+        @keyframes test1{
+            0%{opacity:0;}
+            10%{opacity:1;}
+            20%{filter:opacity(0.2) drop-shadow(0 0 0 #8b2020);}
+            30%{filter:opacity(0.2) drop-shadow(0 0 0 red);}
+            40%{filter:opacity(0.2) drop-shadow(0 0 0 #BFBD1D); transform: translateX(5px);}
+            50%{transform: translateY(-10px);}
+            60%{filter:opacity(0.1) drop-shadow(0 0 0 #010204);}
+            70%{transform: translateX(-20px); filter:opacity(0.1) drop-shadow(0 0 0 #441A59);}
+        }
+        
+
+        
+
+
+        
+        
+        
+        

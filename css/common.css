@@ -1,0 +1,13 @@
+
+
+
+
+@font-face {
+  font-family: 'YeolrinGothic-Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/YeolrinGothic-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {margin:0; padding:0;}
+ul, li, ol{list-style: none; text-decoration: none;}
