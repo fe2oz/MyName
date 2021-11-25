@@ -69,12 +69,25 @@
             
         }
 
+        .cover{
+            width:calc(100% - 200px);       
+           
+            height:1200px;
+            background-color:black;
+            opacity:0;
+            position:absolute;
+            top:0;
+            right:0;
+            z-index:55;
+        }
+
         .logo_image{
             height:1200px;
             position:relative;
-            background-size:cover;
+            background-size:100%;
             background-position: middle;
             background-repeat: no-repeat;
+            
         }
 
         .logo_image img{
