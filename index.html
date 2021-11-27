@@ -15,6 +15,7 @@
     <script src="js/notice.js"></script>
     <script src="js/notice_video.js"></script>
     <script src="js/photo_box.js"></script>
+    <script src="js/modal.js"></script>
 
 </head>
 
@@ -136,7 +137,7 @@
             <div class="character1">
                 <img src="img/st1.jpg" alt="">
                 <div class="character1_text">
-                    <span>윤지우</span>&nbsp;&nbsp;
+                    <span>윤지우 / 오혜진</span>&nbsp;&nbsp;
                     <span>한소희</span>
                     <br><br>
                     <h1>
@@ -188,22 +189,30 @@
         <div class="notice_video">
             
             <div class="notice1">
-                <a href="#">
                     <img class="notice1_photo" src="img/4.png" alt="">
                     
                     <div class="notice1_text">
                         마이 네임 | 공식 예고편 | 넷플릭스
                     </div>
-                </a>
             </div>
 
             <div class="notice2">
-                <a href="#">
                     <img class="notice2_photo" src="img/2.jpg" alt="">
                     <div class="notice2_text">
                         마이 네임 | 공식 티저 예고편 | 넷플릭스
                     </div>
-                </a>
+            </div>
+
+            <div class="notice1_modal">
+                <div class="notice1_modal_content">
+                    <video src="video/마이 네임 - 공식 예고편 - 넷플릭스.mp4" loop muted controls></video>
+                </div>
+            </div>
+
+            <div class="notice2_modal">
+                <div class="notice2_modal_content">
+                    <video src="video/마이 네임 - 공식 티저 예고편 - 넷플릭스.mp4" loop muted controls></video>
+                </div>
             </div>
 
         </div>
@@ -448,7 +457,6 @@
             </div>
 
         <div class="photo_box">
-            <a href="#">
                 <div class="src1">
                     <img src="img/st9.jpg" alt="">
                     <div class="src1_text">
@@ -456,9 +464,7 @@
                         한소희
                     </div>
                 </div>
-            </a>
-                
-            <a href="#">
+
                 <div class="src2">
                     <img src="img/c5.jpg" alt="">
                     <div class="src2_text">
@@ -466,9 +472,7 @@
                         박희순
                     </div>
                 </div>
-            </a>
 
-            <a href="#">
                 <div class="src3">
                     <img src="img/12.jpg" alt="">
                     <div class="src3_text">
@@ -476,39 +480,31 @@
                         한소희, 장률
                     </div>
                 </div>
-            </a>
 
-            <a href="#">
                 <div class="src4">
-                    <img src="img/j5.png" alt="">
+                    <img src="img/st22.jpg" alt="">
                     <div class="src4_text">
-                        마이 네임 | 전필도<br>
-                        안보현
+                        마이 네임 | 윤지우, 전필도<br>
+                        한소희, 안보현
                     </div>
                 </div>
-            </a>
 
-            <a href="#">
                 <div class="src5">
-                    <img src="img/c7.png" alt="">
+                    <img src="img/st21.jpg" alt="">
                     <div class="src5_text">
-                        마이 네임 | 최무진<br>
-                        박희순
+                        마이 네임 | 도강재<br>
+                        장률
                     </div>
                 </div>
-            </a>
 
-            <a href="#">
                 <div class="src6">
-                    <img src="img/j1.jpg" alt="">
+                    <img src="img/st15.png" alt="">
                     <div class="src6_text">
-                        마이 네임 | 전필도<br>
-                        안보현
+                        마이 네임 | 정태주, 윤지우<br>
+                        이학주, 한소희
                     </div>
                 </div>
-            </a>
 
-            <a href="#">
                 <div class="src7">
                     <img src="img/st8.jpg" alt="">
                     <div class="src7_text">
@@ -516,29 +512,90 @@
                         이학주
                     </div>
                 </div>
-            </a>
 
-            <a href="#">
                 <div class="src8">
-                    <img src="img/st16.jpg" alt="">
+                    <img src="img/st10.jpg" alt="">
                     <div class="src8_text">
-                        마이 네임 | 도강재, 윤지우<br>
-                        장률, 한소희
+                        마이 네임 | 윤지우<br>
+                        한소희
                     </div>
                 </div>
-            </a>
 
-            <a href="#">
                 <div class="src9">
-                    <img src="img/20211125_220929288_08.png" alt="">
+                    <img src="img/20211125_220929288_07.png" alt="">
                     <div class="src9_text">
-                        마이 네임 | 최무진, 강수연<br>
-                        박희순, 백주희
+                        마이 네임 | 최무진<br>
+                        박희순
                     </div>
                 </div>
-            </a>
 
+                <!-- 모달 부분 -->
+
+                <!-- src1 -->
+                <div class="modal">
+                    <div class="modal_content">
+                        <img src="img/st9.jpg" alt=""> 
+                    </div>
+                </div>
+
+                <!-- src2 -->
+                <div class="modal1">
+                    <div class="modal_content1">
+                        <img src="img/c5.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- src3 -->
+                <div class="modal2">
+                    <div class="modal_content2">
+                        <img src="img/12.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- src4 -->
+                <div class="modal3">
+                    <div class="modal_content3">
+                        <img src="img/st22.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- src5 -->
+                <div class="modal4">
+                    <div class="modal_content4">
+                        <img src="img/st21.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- src6 -->
+                <div class="modal5">
+                    <div class="modal_content5">
+                        <img src="img/st15.png" alt="">
+                    </div>
+                </div>
+
+                <!-- src7 -->
+                <div class="modal6">
+                    <div class="modal_content6">
+                        <img src="img/st8.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- src8 -->
+                <div class="modal7">
+                    <div class="modal_content7">
+                        <img src="img/st10.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- src9 -->
+                <div class="modal8">
+                    <div class="modal_content8">
+                        <img src="img/20211125_220929288_07.png" alt="">
+                    </div>
+                </div>
         </div>
+
+
     </div>
 
     <footer>
