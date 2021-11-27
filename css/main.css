@@ -548,6 +548,7 @@
             overflow: hidden;
             overflow-y: auto;
             background-color:black;
+            display:none;
         }
 
         .agian_video_modal_content{
