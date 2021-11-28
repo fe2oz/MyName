@@ -15,12 +15,13 @@
     <script src="js/notice.js"></script>
     <script src="js/photo_box.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/header.js"></script>
 
 </head>
 
 <body>
     
-    <header>
+    <header style="background-image: url(img/test4-1.jpg);">
         
         <div class="menu_icon">
             <img src="img/menu.png" alt="">
@@ -28,25 +29,25 @@
 
         <nav class="main_menu">
             <li>
-                <a href="#" style="background-color:black; color:#890c35;">프로그램 소개</a>
+                <a href="#program_show" style="background-color:black;">프로그램 소개</a>
                 <ul>
-                    <li><a href="#">프로그램 정보</a></li>
-                    <li><a href="#">인물 소개</a></li>
+                    <li><a href="#program_show">프로그램 정보</a></li>
+                    <li><a href="#character_show">인물 소개</a></li>
                 </ul>
             </li>
 
             <li>
-                <a href="#" style="background-color:black; color:#890c35;">동영상</a>
+                <a href="#notice_show" style="background-color:black;">동영상</a>
                 <ul>
-                    <li><a href="#">예고편</a></li>
-                    <li><a href="#">클립 영상</a></li>
-                    <li><a href="#">회차 정보</a></li>
-                    <li><a href="#">최신 뉴스</a></li>
+                    <li><a href="#notice_show">예고편</a></li>
+                    <li><a href="#clip_video_show">클립 영상</a></li>
+                    <li><a href="#again_show">회차 정보</a></li>
+                    <li><a href="#special_show">최신 뉴스</a></li>
                 </ul>
             </li>
 
-            <li><a href="#" style="background-color:black; color:#890c35;">사진첩</a></li>
-            <li><a href="#" style="background-color:black; color:#890c35;">OST</a></li>
+            <li><a href="#photo_show" style="background-color:black;">사진첩</a></li><br>
+            <li><a href="#" style="background-color:black;">OST</a></li>
         </nav>
 
     </header>
@@ -82,10 +83,10 @@
 
         </div>
 
-            <div class="program_show">프로그램 정보</div>
+            <div class="program_show" id="program_show">프로그램 정보</div>
 
             <div class="all">
-                <a href="#">전체보기</a>
+                <a href="#program_show">전체보기</a>
             </div>
 
            
@@ -130,10 +131,10 @@
             
         </div>
 
-            <div class="character_show">인물 소개</div>
+            <div class="character_show" id="character_show">인물 소개</div>
 
             <div class="all">
-                <a href="#">전체보기</a>
+                <a href="#character_show">전체보기</a>
             </div>
 
 
@@ -185,10 +186,10 @@
             </div>
         </div>
 
-            <div class="notice_show">예고편</div>
+            <div class="notice_show" id="notice_show">예고편</div>
 
             <div class="all">
-                <a href="#">전체보기</a>
+                <a href="#notice_show">전체보기</a>
             </div>
 
 
@@ -226,10 +227,10 @@
 
         </div>
 
-            <div class="clip_video_show">클립 영상</div>
+            <div class="clip_video_show" id="clip_video_show">클립 영상</div>
 
             <div class="all">
-                <a href="#">전체보기</a>
+                <a href="https://www.youtube.com/playlist?list=PLL1qZqiuec_TL6YfgOdVqscr-_9KBNwlH" target="_blank">전체보기</a>
             </div>
 
 
@@ -237,7 +238,7 @@
         <div class="clip_video">
 
             <div class="clip1">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=TOTswK8Km74&list=PLL1qZqiuec_TL6YfgOdVqscr-_9KBNwlH&index=21" target="_blank">
                     <img src="img/p1.jpg" alt="">
                         <div class="clip1_text">
                             마이네임 | 공식 티저 예고편 | 넷플릭스
@@ -246,7 +247,7 @@
             </div>
 
             <div class="clip2">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=-NsNHD0LXV4&list=PLL1qZqiuec_TL6YfgOdVqscr-_9KBNwlH&index=20" target="_blank">
                     <img src="img/p2.jpg" alt="">
                         <div class="clip2_text">
                             마이네임 | 클립 영상 | 넷플릭스
@@ -255,7 +256,7 @@
             </div>
 
             <div class="clip3">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=gNCKXJyjW4o&list=PLL1qZqiuec_TL6YfgOdVqscr-_9KBNwlH&index=18" target="_blank">
                     <img src="img/p3.jpg" alt="">
                         <div class="clip3_text">
                             마이 네임 | 제작기 영상 | 넷플릭스
@@ -264,7 +265,7 @@
             </div>
 
             <div class="clip4">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=gxBKopO8zCA&list=PLL1qZqiuec_TL6YfgOdVqscr-_9KBNwlH&index=17" target="_blank">
                     <img src="img/p4.sujung" alt="">
                         <div class="clip4_text">
                             맨 손으로 조폭들과 싸우는 한소희 | 마이 네임 | 2분 미리보기 | 넷플릭스
@@ -273,7 +274,7 @@
             </div>
 
             <div class="clip5">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=mwol2jQHKLg&list=PLL1qZqiuec_TL6YfgOdVqscr-_9KBNwlH&index=16" target="_blank">
                     <img src="img/p5.jpg" alt="">
                         <div class="clip5_text">
                             한소희, 두 개의 이름을 갖게 된 이유 | 마이 네임 | 넷플릭스
@@ -282,7 +283,7 @@
             </div>
 
             <div class="clip6">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=ULiw4fbqf2k&list=PLL1qZqiuec_TL6YfgOdVqscr-_9KBNwlH&index=15" target="_blank">
                     <img src='img/p6.jpg' alt="">
                         <div class="clip6_text">
                             마이 네임 한소희, 폐차장에서 액션 찢었다 😎 | MY NAME | 넷플릭스
@@ -291,7 +292,7 @@
             </div>
             
             <div class="clip7">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=rlk-bVhXoS0&list=PLL1qZqiuec_TL6YfgOdVqscr-_9KBNwlH&index=11" target="_blank">
                     <img src="img/p7.jpg" alt="">
                         <div class="clip7_text">
                             마이 네임과 프라우드먼이 만났을 때 MY NAME X PROWDMON TEASER | 마이 네임 | 넷플릭스
@@ -300,16 +301,16 @@
             </div>
 
             <div class="clip8">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=t4hpv_bCrio&list=PLL1qZqiuec_TL6YfgOdVqscr-_9KBNwlH&index=9" target="_blank">
                     <img src="img/p8.jpg" alt="">
                     <div class="clip8_text">
-                        마이 네임과 프라우드먼이 만났을 때 MY NAME X PROWDMON TEASER | 마이 네임 | 넷플릭스
+                        마이 네임 X 프라우드먼, 놀라운 퍼포먼스의 완결판 | 마이 네임 MY NAME | 넷플릭스
                     </div>
                 </a>
             </div>
         </div>
 
-            <div class="again_show">회차 정보</div>
+            <div class="again_show" id="again_show">회차 정보</div>
 
             <div class="all_1">
                 <span>전체보기</span>
@@ -476,17 +477,17 @@
 
         </div>
 
-            <div class="special_show">최신 뉴스</div>
+            <div class="special_show" id="special_show">최신 뉴스</div>
 
             <div class="all">
-                <a href="#">전체보기</a>
+                <a href="#special_show">전체보기</a>
             </div>
 
 
         <!-- 최신 뉴스 -->
         <div class="special_video">
 
-            <a href="#">
+            <a href="https://entertain.naver.com/read?oid=109&aid=0004498800" target="_blank">
                 <div class="news1">
                     <img src="img/st8.jpg" alt="">
                     <div class="news1_text">
@@ -502,7 +503,7 @@
                 </div>
             </a>
 
-            <a href="#">
+            <a href="https://news.naver.com/main/read.naver?mode=LSD&mid=sec&sid1=103&oid=015&aid=0004619788" target="_blank">
                 <div class="news2">
                     <img src="img/st5-3.jpg" alt="">
                         <div class="news2_text">
@@ -518,7 +519,7 @@
                 </div>
             </a>
             
-            <a href="#">
+            <a href="https://entertain.naver.com/read?oid=108&aid=0002998107" target="_blank">
                 <div class="news3">
                     <img src="img/1.jpg" alt="">
                         <div class="news3_text">
@@ -534,7 +535,7 @@
                 </div>
             </a>
             
-            <a href="#">
+            <a href="https://entertain.naver.com/read?oid=465&aid=0000005157" target="_blank">
                 <div class="news4">
                     <img src="img/12.jpg" alt="">
                         <div class="news4_text">
@@ -550,7 +551,7 @@
                 </div>
             </a>
 
-            <a href="#">
+            <a href="https://news.naver.com/main/read.naver?mode=LSD&mid=sec&sid1=101&oid=018&aid=0005062611" target="_blank">
                 <div class="news5">
                     <img src="img/st13.png" alt="">
                         <div class="news5_text">
@@ -566,7 +567,7 @@
                 </div>
             </a>
 
-            <a href="#">
+            <a href="https://entertain.naver.com/read?oid=144&aid=0000767654" target="_blank">
                 <div class="news6">
                     <img src="img/st1.jpg" alt="">
                         <div class="news6_text">
@@ -584,10 +585,10 @@
         
         </div>
 
-            <div class="photo_show">사진첩</div>
+            <div class="photo_show" id="photo_show">사진첩</div>
 
             <div class="all">
-                <a href="#">전체보기</a>
+                <a href="#photo_show">전체보기</a>
             </div>
 
 

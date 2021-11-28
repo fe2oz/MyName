@@ -1,4 +1,8 @@
 
+        html{
+            scroll-behavior: smooth;
+        }
+        
         body{
             background-color:black;
             width:100%;
@@ -6,10 +10,11 @@
             
         }
 
+
         header{
             width:200px; 
             height:100%; 
-            background-color:#131313;
+            background-size: cover;
             position:fixed;
             z-index:10;
             float:left;
@@ -19,8 +24,7 @@
         .menu_icon{
             width:200px;
             margin:0;
-            filter: opacity(0.5) drop-shadow(0 0 0 darkred);
-            
+            filter: invert(1);
         }
 
         /* 헤더 메뉴 선택 부분 */
@@ -31,7 +35,7 @@
         .main_menu{
             width:200px; 
             height:100%;
-            background-color:#131313;
+            
         }
         .main_menu li a{
             color:#e5e5e5;
@@ -53,7 +57,8 @@
         }
 
         .main_menu li ul li a:hover{
-            background-color:darkred;
+            background-color:#6c6c6c;
+            color:black;
         }
         .main_menu li ul li a{
             border-left:1px solid gray;
@@ -67,6 +72,11 @@
         }
 
 
+        @media(min-width:1000px){
+            .menu_icon{
+                display:none;
+            }
+        }
 
         .section{
             width:calc(100% - 200px);
@@ -138,17 +148,18 @@
             width:1200px;
             height:300px;
             color:#e5e5e5;
-            font-family: 'Hahmlet-ExtraBold';
+            font-family: 'GowunBatang-Regular';
             font-size:30px;
             text-align: center;
             line-height:300px;
             margin:0 auto;
+            
         }
 
         .poster_box{
             width:100%;
             height:auto;
-            
+           
         }
 
         .poster_show{
@@ -239,7 +250,7 @@
             width:1200px;
             height:300px;
             color:#e5e5e5;
-            font-family: 'Hahmlet-ExtraBold';
+            font-family: 'GowunBatang-Regular';
             font-size:30px;
             text-align: center;
             line-height:300px;
@@ -273,7 +284,8 @@
         .character3 span{
             color:#890c35;
             font-size:40px;
-            font-family: 'Hahmlet-ExtraBold';
+            font-family: 'GowunBatang-Regular';
+            font-weight: bold;
         }
         .character1 span:nth-of-type(2),
         .character2 span:nth-of-type(2),
@@ -314,7 +326,7 @@
             width:1200px;
             height:300px;
             color:#e5e5e5;
-            font-family: 'Hahmlet-ExtraBold';
+            font-family: 'GowunBatang-Regular';
             font-size:30px;
             text-align: center;
             line-height:300px;
@@ -394,7 +406,7 @@
             width:1200px;
             height:300px;
             color:#e5e5e5;
-            font-family: 'Hahmlet-ExtraBold';
+            font-family: 'GowunBatang-Regular';
             font-size:30px;
             text-align: center;
             line-height:300px;
@@ -406,8 +418,8 @@
             height:700px;
             text-align: center;
             display:flex;
-            justify-content: space-between;
             flex-flow:row wrap;
+            justify-content: space-evenly;
         }
 
         .clip1,
@@ -483,7 +495,7 @@
             width:1200px;
             height:300px;
             color:#e5e5e5;
-            font-family: 'Hahmlet-ExtraBold';
+            font-family: 'GowunBatang-Regular';
             font-size:30px;
             text-align: center;
             line-height:300px;
@@ -546,7 +558,7 @@
             top:3%;
             left:27%;
             overflow: hidden;
-            overflow-y: auto;
+            overflow-y: initial !important;
             background-color:black;
             display:none;
         }
@@ -692,7 +704,7 @@
             width:1200px;
             height:300px;
             color:#e5e5e5;
-            font-family: 'Hahmlet-ExtraBold';
+            font-family: 'GowunBatang-Regular';
             font-size:30px;
             text-align: center;
             line-height:300px;
@@ -782,7 +794,7 @@
         .news4_text h1,
         .news5_text h1,
         .news6_text h1{
-            color:#890c35;
+            color:#e5e5e5;
         }
         
 
@@ -791,7 +803,7 @@
             width:1200px;
             height:300px;
             color:#e5e5e5;
-            font-family: 'Hahmlet-ExtraBold';
+            font-family: 'GowunBatang-Regular';
             font-size:30px;
             text-align: center;
             line-height:300px;

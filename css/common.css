@@ -16,5 +16,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'GowunBatang-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {margin:0; padding:0;}
 ul, li, ol{list-style: none; text-decoration: none;}
