@@ -199,7 +199,10 @@ $(function(){
         $('.again11play').fadeOut();
         $('.again11_image').css("opacity", "1")
     });
+
+    
 });
+
 
 
 

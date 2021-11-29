@@ -1,0 +1,808 @@
+
+
+
+
+@media(max-width:599px){
+    .menu_icon{
+        width:200px;
+        margin:0;
+        filter: invert(1);
+        cursor: pointer;
+    }
+
+    .menu_icon img{
+        width:30px; height:30px;
+    }
+
+    header{
+        width:100%; height:30px;
+        position:absolute; z-index:10;
+        background-color:#131313; opacity:0.7;
+    }
+
+    .main_menu{
+        width:100%; height:60%;
+        display:none;
+    }
+
+    .main_menu li a{
+        color:#e5e5e5;
+        text-decoration: none;
+        font-family: 'YeolrinGothic-Light'; font-weight: normal; font-size:13px;
+        padding:15px;
+        display:block;
+    }
+
+    .main_menu li ul li{
+        display:block;
+        padding-left:15px;
+    }
+    .main_menu li ul li:hover{
+        animation-name:btn;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes btn{
+        0%{opacity:0;}
+        10%{opacity:1;}
+        15%{opacity:0;}
+        20%{opacity:1;}
+    }
+
+    .main_menu li ul li a:hover{
+        background-color:#6c6c6c; color:black;
+    }
+    .main_menu li ul li a{
+        border-left:1px solid gray;
+    }
+
+    /* 각 섹션 소제목 */
+    .all,
+    .all_1{
+        width:100%; height:50px;
+        display:flex; justify-content: flex-end;
+        margin:0 auto;
+        margin-left:-15px;
+    }
+
+    .all a,
+    .all_1 span{
+        height:0;
+        font-family: 'YeolrinGothic-Light'; font-size:17px;
+        text-decoration: none;
+        color:#c5124c;
+        cursor: pointer;
+    }
+
+    .section{
+        width:100%; height:auto;
+    }
+
+    /* 슬라이더 마우스 영역  */
+    .cover{
+        width:100%; height:350px;
+        background-color:black;
+        opacity:0;
+        position:absolute; top:0; right:0;
+        z-index:9;
+    }
+
+    /* 슬라이더 백그라운드 이미지 */
+    #slider{
+        width:100%; height:60%;
+        background-size:cover; background-repeat: no-repeat;
+    }
+
+    /* 포스터 사진, 프로그램 소개 */
+    .program_show{
+        width:100%; height:250px;
+        color:#e5e5e5;
+        font-family: 'GowunBatang-Regular'; font-size:30px;
+        text-align: center;
+        line-height:250px;
+        margin:0 auto;
+    }
+
+    .poster_box{
+        width:100%; height:auto;
+    }
+
+    .poster_show{
+        width:100%; height:300px;
+        color:#e5e5e5;
+        font-family: 'YeolrinGothic-Light'; font-size:1em;
+        text-align: center;
+        display:flex; justify-content: center; align-items: center;
+    }
+
+    .poster_image_box{
+        width:100%; height:50vh;
+        box-sizing: border-box;
+        position:relative;
+        display:flex;
+    }
+
+    .poster_image1{
+        flex:1;
+        overflow:hidden;
+        transition:0.5s;
+    }
+
+    .poster_image1:hover{
+        flex:1 1 30%;
+    }
+
+    .poster_image1 > img{
+        width:100%; height:100%;
+        object-fit: cover;
+        transition:0.5s;
+    }
+
+    /* 프로그램 정보 */
+    .program_show{
+        width:100%; height:250px;
+        color:#e5e5e5;
+        font-family: 'GowunBatang-Regular'; font-size:30px;
+        text-align: center;
+        line-height:250px;
+        margin:0 auto;
+    }
+
+    .program_box{
+        width:100%; height:auto;
+        display:flex; flex-flow:column wrap; justify-content: center; align-items: center;
+        margin:0 auto;
+    }
+
+    .infor,
+    .infor2,
+    .infor3,
+    .infor4{
+        width:100%;
+        height:100px;
+        display:flex;
+        margin:0 auto;
+    }
+    .infor{
+        height:200px;
+    }
+
+    .infor h1,
+    .infor2 h1,
+    .infor3 h1,
+    .infor4 h1{
+        width:20%;
+        font-family: 'YeolrinGothic-Light'; font-size:17px;
+        color:gray;
+        text-align: center;
+    }
+
+    .infor h2,
+    .infor2 h2,
+    .infor3 h2,
+    .infor4 h2{
+        width:77%;
+        font-family: 'YeolrinGothic-Light'; font-size:15px; font-weight: normal;
+        color:#e5e5e5;
+    }
+
+     /* 등장인물 소개 */
+     .character_show{
+        width:100%; height:250px;
+        color:#e5e5e5;
+        font-family: 'GowunBatang-Regular'; font-size:30px;
+        text-align: center;
+        line-height:250px;
+        margin:0 auto;
+    }
+
+    .character{
+        width:100%; height:auto;
+        background-repeat: no-repeat;
+    }
+
+    .character1,
+    .character2,
+    .character3{
+        width:100%; height:280px;
+        margin:0 auto;
+        display:flex; align-items: center;
+    }
+
+    .character1_text,
+    .character2_text,
+    .character3_text{
+        width:70%;
+        padding:20px;
+    }
+
+    .character1 span,
+    .character2 span,
+    .character3 span{
+        color:#890c35;
+        font-size:25px; font-family: 'GowunBatang-Regular'; font-weight: bold;
+    }
+    .character1 span:nth-of-type(2),
+    .character2 span:nth-of-type(2),
+    .character3 span:nth-of-type(2){
+        font-size:20px; font-family: 'YeolrinGothic-Light';
+        color:gray;
+    }
+
+    .character1 h1,
+    .character2 h1,
+    .character3 h1{
+        font-size:15px; font-family: 'YeolrinGothic-Light'; font-weight:normal;
+        color:#e5e5e5;
+    }
+
+    .character1 img,
+    .character2 img,
+    .character3 img{
+        width:40%;
+        transition:.5s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .character1 img:hover,
+    .character3 img:hover{
+        clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+        transform:translateX(-5%);
+    }
+    .character2 img:hover{
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        transform:translateX(5%);
+    }
+
+    /* 예고편 */
+    .notice_show{
+        width:100%; height:250px;
+        color:#e5e5e5;
+        font-family: 'GowunBatang-Regular'; font-size:30px;
+        text-align: center;
+        line-height:250px;
+        margin:0 auto;
+    }
+    
+    .notice_video{
+        width:100%; height:auto;
+        display:flex; flex-flow:row wrap;
+        margin:0 auto;
+    }
+
+    .notice1,
+    .notice2{
+        width:100%; height:350px;
+        cursor: pointer;
+        position:relative;
+    }
+
+    .notice1_text,
+    .notice2_text{
+        font-family: 'YeolrinGothic-Light'; font-size:17px;
+        color:#e5e5e5;
+        text-align: center;
+        margin-top:20px;
+    }
+
+    .notice1_photo,
+    .notice2_photo{
+        width:100%; height:250px;
+        transition:all 0.3s;
+    }
+
+    .playbutton,
+    .playbutton1{
+        width:50px; height:50px;
+        filter: invert(1);
+        position:absolute; left:47%; top:30%;
+        display:none;
+    }
+
+    /* 예고편 동영상 모달 */
+    .notice1_modal,
+    .notice2_modal{
+        width:100vw; height:100vh;
+        backdrop-filter: blur(5px);
+        position:fixed; top:50%; left:50%;
+        transform: translate(-50%, -50%);
+        display:none;
+    }
+
+    .notice1_modal_content,
+    .notice2_modal_content{
+        width:100%; height:100%;
+        position:absolute;
+    }
+
+    .notice1_modal_content video,
+    .notice2_modal_content video{
+        width:100%; height:100%;
+    }
+
+    /* 클립 영상 */
+    .clip_video_show{
+        width:100%; height:250px;
+        color:#e5e5e5;
+        font-family: 'GowunBatang-Regular'; font-size:30px;
+        text-align: center;
+        line-height:250px;
+        margin:0 auto;
+    }
+
+    .clip_video{
+        width:100%; height:auto;
+        text-align: center;
+        display:flex; flex-flow:row wrap; justify-content: center; align-items: center;
+    }
+
+    .clip1,
+    .clip2,
+    .clip3,
+    .clip4,
+    .clip5,
+    .clip6,
+    .clip7,
+    .clip8{
+        width:100%; height:auto;
+    }
+
+    .clip1 img,
+    .clip2 img,
+    .clip3 img,
+    .clip4 img,
+    .clip5 img,
+    .clip6 img,
+    .clip7 img,
+    .clip8 img{
+        width:100%; height:100%;
+        transition:all 0.3s;
+    }
+
+    .clip1 img:hover,
+    .clip2 img:hover,
+    .clip3 img:hover,
+    .clip4 img:hover,
+    .clip5 img:hover,
+    .clip6 img:hover,
+    .clip7 img:hover,
+    .clip8 img:hover{
+        opacity:0.5;
+    }
+
+    .clip1_text,
+    .clip2_text,
+    .clip3_text,
+    .clip4_text,
+    .clip5_text,
+    .clip6_text,
+    .clip7_text,
+    .clip8_text{
+        height:100px;
+        color:#e5e5e5;
+        font-family: 'YeolrinGothic-Light'; font-size:14px;
+        display:Flex; justify-content: center; align-items: center;
+    }
+
+    .clip1 a,
+    .clip2 a,
+    .clip3 a,
+    .clip4 a,
+    .clip5 a,
+    .clip6 a,
+    .clip7 a,
+    .clip8 a{
+        text-decoration: none;
+    }
+
+    
+     /* 회차 정보 */
+     .again_show{
+        width:100%; height:250px;
+        color:#e5e5e5;
+        font-family: 'GowunBatang-Regular'; font-size:30px;
+        text-align: center;
+        line-height:250px;
+        margin:0 auto;
+    }
+
+    .again_video{
+        width:100%; height:auto;
+        margin:0 auto;
+    }
+
+    .one,
+    .two,
+    .three{
+        width:100%; height:auto;
+        display:flex; flex-flow:column wrap; justify-content: center;
+    }
+
+    .one:hover,
+    .two:hover,
+    .three:hover{
+        background-color:#131313;
+    }
+
+    .again1_text,
+    .again2_text,
+    .again3_text{
+        width:100%; height:auto;
+        display:flex; justify-content: center; align-items: center; flex-flow:column wrap;
+    }
+    .one h1,
+    .two h1,
+    .three h1{
+        font-family: 'YeolrinGothic-Light'; font-size:15px; font-weight: normal;
+        color:#e5e5e5;
+        padding:20px;
+    }
+    .one span,
+    .two span,
+    .three span{
+        font-family: 'YeolrinGothic-Light'; font-size:13px; font-weight: normal;
+        color:#e5e5e5;
+        text-align: left;
+        padding:20px;
+    }
+
+    /* 회차 정보 모달 */
+    .again_video_modal{
+        width:85%; height:100%;
+        position:fixed; z-index:55; top:50%; left:50%;
+        transform:translate(-50%, -50%);
+        background-color:black;
+        overflow: hidden;
+        overflow-y: initial !important;
+        display:none;
+    }
+
+    .agian_video_modal_content{
+        width:85%; height:auto;
+        color:#e5e5e5;
+        overflow-y: scroll;
+        position:relative;
+    }
+
+    .close{
+        filter: invert(1);
+        position:absolute; top:2%; right:2%;
+        cursor:pointer;
+    }
+
+    .st2{
+        color:#e5e5e5;
+        font-family:'YeolrinGothic-Light'; font-size:20px;
+        padding:25px;
+    }
+
+    .st1{
+        width:100%; height:50%;
+    }
+
+    .again4_text_modal,
+    .again5_text_modal,
+    .again6_text_modal,
+    .again7_text_modal,
+    .again8_text_modal,
+    .again9_text_modal,
+    .again10_text_modal,
+    .again11_text_modal{
+        width:100%; height:auto;
+        font-family:'YeolrinGothic-Light';
+        color:#e5e5e5;
+        display:flex; flex-flow:column wrap; justify-items: center; align-items: center;
+        margin:0 auto; margin-bottom:20px;
+        transition:0.2s;
+        position:relative;
+    }
+
+    .again4_text_modal:hover,
+    .again5_text_modal:hover
+    .again6_text_modal:hover,
+    .again7_text_modal:hover,
+    .again8_text_modal:hover,
+    .again9_text_modal:hover,
+    .again10_text_modal:hover,
+    .again11_text_modal:hover{
+        background-color:#131313;
+    }
+
+    .again4_image,
+    .again5_image,
+    .again6_image,
+    .again7_image,
+    .again8_image,
+    .again9_image,
+    .again10_image,
+    .again11_image{
+        width:100%; height:auto;
+        transition:0.5s;
+    }
+
+    .again4_image img,
+    .again5_image img,
+    .again6_image img,
+    .again7_image img,
+    .again8_image img,
+    .again9_image img,
+    .again10_image img,
+    .again11_image img{
+        width:100%; height:auto;
+    }
+
+    .again4play,
+    .again5play,
+    .again6play,
+    .again7play,
+    .again8play,
+    .again9play,
+    .again10play,
+    .again11play{
+        width:50px; height:50px;
+        filter: invert(1);
+        position:absolute; top:25%; left:45%;
+        display:none;
+    }
+
+    .text4modal{
+        width:97%; height:auto;
+        display:Flex; flex-flow:column wrap; justify-content: space-evenly;
+        cursor:pointer;
+        padding:3%;
+    }
+
+    .again4_text_modal:hover,
+    .again5_text_modal:hover,
+    .again6_text_modal:hover,
+    .again7_text_modal:hover,
+    .again8_text_modal:hover,
+    .again9_text_modal:hover,
+    .again10_text_modal:hover,
+    .again11_text_modal:hover{
+        background-color:#131313;
+    }
+
+    .text4modal h2,
+    .text4modal h3{
+        font-weight: normal;
+    }
+
+    .text4modal h2{
+        font-size:15px;
+    }
+
+    .text4modal h3{
+        font-size:14px;
+    }
+
+
+     /* 최신 뉴스 */
+     .special_show{
+        width:100%; height:250px;
+        color:#e5e5e5;
+        font-family: 'GowunBatang-Regular'; font-size:30px;
+        text-align: center;
+        line-height:250px;
+        margin:0 auto;
+    }
+
+    .special_video{
+        width:100%; height:auto;
+        margin:0 auto;
+        display:flex; flex-flow:row wrap; align-items: center;
+    }
+
+    .special_video a{
+        text-decoration: none;
+    }
+    
+    .news1,
+    .news2,
+    .news3,
+    .news4,
+    .news5,
+    .news6{
+        width:100%; height:200px;
+        display:flex; 
+        margin-bottom:20px;
+    }
+
+    .news1:hover,
+    .news2:hover,
+    .news3:hover,
+    .news4:hover,
+    .news5:hover,
+    .news6:hover{
+        background-color:#131313;
+    }
+
+    .news1 img,
+    .news2 img,
+    .news3 img,
+    .news4 img,
+    .news5 img,
+    .news6 img{
+        width:30%; height:100%;
+    }
+
+    .news1_text,
+    .news2_text,
+    .news3_text,
+    .news4_text,
+    .news5_text,
+    .news6_text{
+        width:67%; height:97%;
+        color:#e5e5e5;
+        font-family: 'YeolrinGothic-Light'; font-size:11px;
+        display:flex; flex-flow:column wrap; justify-content: center;
+        padding:3%;
+    }
+
+    .news1_text h2,
+    .news2_text h2,
+    .news3_text h2,
+    .news4_text h2,
+    .news5_text h2,
+    .news6_text h2,
+    .news1_text h3,
+    .news2_text h3,
+    .news3_text h3,
+    .news4_text h3,
+    .news5_text h3,
+    .news6_text h3{
+        font-weight: normal;
+        font-size:15px;
+        padding-top:10px;
+    }
+
+    .news1_text h1,
+    .news2_text h1,
+    .news3_text h1,
+    .news4_text h1,
+    .news5_text h1,
+    .news6_text h1{
+        color:#e5e5e5;
+        font-size:18px;
+    }
+
+    /* 사진첩 */
+    .photo_show{
+        width:100%; height:250px;
+        color:#e5e5e5;
+        font-family: 'GowunBatang-Regular'; font-size:30px;
+        text-align: center;
+        line-height:250px;
+        margin:0 auto;
+    }
+
+    .photo_box{
+        width:100%; height:auto;
+        margin:0 auto;
+        display:flex; flex-flow:row wrap; justify-content: center;
+        margin-bottom:100px;
+    }
+
+    .photo_box a{
+        text-decoration: none;
+    }
+
+    /* 사진첩 각 사진 확대 모달 */
+    .modal,
+    .modal1,
+    .modal2,
+    .modal3,
+    .modal4,
+    .modal5,
+    .modal6,
+    .modal7,
+    .modal8{
+        width:85%; height:70%;
+        backdrop-filter: blur(12px);
+        position:fixed; top:50%; left:50%; z-index:55;
+        transform: translate(-50%, -50%);
+        display:none;
+    }
+
+    .modal_content,
+    .modal_content1,
+    .modal_content2,
+    .modal_content3,
+    .modal_content4,
+    .modal_content5,
+    .modal_content6,
+    .modal_content7,
+    .modal_content8{
+        width:100%; height:100%;
+    }
+
+    .modal_content img,
+    .modal_content1 img,
+    .modal_content2 img,
+    .modal_content3 img,
+    .modal_content4 img,
+    .modal_content5 img,
+    .modal_content6 img,
+    .modal_content7 img,
+    .modal_content8 img{
+        width:100%; height:100%;
+    }
+
+    .src1,
+    .src2,
+    .src3,
+    .src4,
+    .src5,
+    .src6,
+    .src7,
+    .src8,
+    .src9{
+        width:390px; height:390px;
+        margin: 5px;
+        position:relative;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .src1 img,
+    .src2 img,
+    .src3 img,
+    .src4 img,
+    .src5 img,
+    .src6 img,
+    .src7 img,
+    .src8 img,
+    .src9 img{
+        width:100%; height:100%;
+        transition:0.5s;
+    }
+
+    .src1_text,
+    .src2_text,
+    .src3_text,
+    .src4_text,
+    .src5_text,
+    .src6_text,
+    .src7_text,
+    .src8_text,
+    .src9_text{
+        width:390px; height:390px;
+        text-align: center;
+        color:#e5e5e5;
+        position:absolute; top:45%;
+        display:none;
+    }
+    
+    footer{
+        width:100%; height:auto;
+        float:right;
+    }
+
+    .company{
+        width:100%;
+        margin:0 auto;
+        display:Flex; justify-content: space-evenly;
+    }
+
+    .company img{
+        width:150px; height:150px;
+    }
+
+    .company_text{
+        color:#e5e5e5;
+        font-family: 'YeolrinGothic-Light';
+        display:Flex; flex-flow:column wrap; justify-content: center;
+    }
+
+    .company_text h1{
+        font-size:15px;
+        padding-bottom:5px;
+    }
+
+    .company_text h2,
+    .company_text h3{
+        font-weight: normal;font-size:13px;
+        padding-top:5px;
+    }
+
+}
