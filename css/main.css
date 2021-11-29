@@ -787,7 +787,7 @@
 
             footer{
                 width: calc(100% - 200px); height:250px;
-                float:right;
+                margin:0 auto; 
             }
 
             .company{
