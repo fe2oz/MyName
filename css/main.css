@@ -25,7 +25,7 @@
                 position:fixed;
                 z-index:10;
                 float:left;
-                background-color:#131313; opacity:0.7;
+                opacity:0.7;
             }
 
             /* 헤더 메뉴 아이콘 */
@@ -34,6 +34,7 @@
                 margin:0;
                 filter: invert(1);
                 cursor: pointer;
+                display:none;
             }
 
             /* 헤더 메뉴 선택 부분 */
@@ -710,7 +711,7 @@
             .modal7,
             .modal8{
                 width:calc(100% - 200px); height:100%;
-                position:fixed; top:55%; left:57%; z-index:55;
+                position:fixed; top:57%; left:57%; z-index:55;
                 transform: translate(-50%, -50%);
                 display:none;
             }
