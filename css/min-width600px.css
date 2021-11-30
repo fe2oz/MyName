@@ -1,60 +1,62 @@
 
-         html{
-            scroll-behavior: smooth;
-            width:100%;
-            height:100%;
-        }
+
+
+
+        @media(min-width:600px) and (max-width:999px){ 
+            
+            .menu_icon{
+                width:65vw;
+                margin:0;
+                cursor: pointer;
+            }
         
-        body{
-            background-color:black;
-            width:100%;
-            height:100%;
-            overflow:auto;
-        }
-        
-        body.s_no-scroll{overflow-y:hidden;}
-
-        body.modal-open {
-            overflow: hidden;
-        }
-
-        *{box-sizing: border-box;}
-
-        @media(min-width:1000px){
-
-            header{
-                width:200px; height:100%; 
-                background-size: cover;
-                position:fixed;
-                z-index:10;
-                float:left;
+            .menu_icon img{
+                width:40px; height:40px;
+                filter:invert(1)
             }
 
-            /* 헤더 메뉴 아이콘 */
-            .menu_icon{
-                width:200px;
-                margin:0;
-                filter: invert(1);
-                cursor: pointer;
+        
+            header{
+                width:65vw; height:40px;
+                position:fixed; z-index:10;
+                
+            }
+        
+            .main_menu{
+                width:65vw; height:100vh;
+                background-color:white;
                 display:none;
             }
-
-            /* 헤더 메뉴 선택 부분 */
-            .menu_icon img{
-                width:35px; height:35px;
-            }
-
-            .main_menu{
-                width:200px; height:100%;
-                display:block;
-            }
-
+        
             .main_menu li a{
-                color:#e5e5e5;
+                color:#131313; background-color:white;
                 text-decoration: none;
-                font-family: 'YeolrinGothic-Light'; font-weight: normal;
-                padding:20px;
+                font-family: 'YeolrinGothic-Light'; font-size:13px;
+                padding:15px;
                 display:block;
+            }
+        
+            .a1{
+                border-bottom:1px solid #131313;
+                font-weight:bold;
+            }
+        
+            .a2{
+                border-top:1px solid #131313;
+                border-bottom:1px solid #131313;
+                font-weight:bold;
+            }
+        
+            .a3{
+                border-top:1px solid #131313;
+                border-bottom:1px solid #131313;
+                font-weight:bold;
+            }
+        
+            .a4{
+                border-top:1px solid #131313;
+                border-bottom:1px solid #131313;
+                font-weight:bold;
             }
         
             .main_menu li ul li{
@@ -76,7 +78,7 @@
 
 
             .main_menu li ul li a:hover{
-                background-color:#6c6c6c; color:black;
+                background-color:lightgray; color:black;
             }
             .main_menu li ul li a{
                 border-left:1px solid gray;
@@ -95,14 +97,14 @@
         
             .icon_menu img{
                 width:30px; height:30px;
-                margin-bottom:15px;
-                filter:invert(1)
+                margin-bottom:5px;
             }
-
+        
+            
             /* 각 섹션 소제목 */
             .all,
             .all_1{
-                width:80%; height:50px;
+                width:100%; height:50px;
                 display:flex; justify-content: flex-end;
                 margin:0 auto;
             }
@@ -118,42 +120,43 @@
 
             /* 슬라이더 마우스 영역  */
             .cover{
-                width:calc(100% - 200px); height:100%;
+                width:100%; height:100%;
                 background-color:black;
                 opacity:0;
                 position:absolute; top:0; right:0;
-                z-index:55;
+                z-index:9;
             }
 
             /* 슬라이더 백그라운드 이미지 */
             #slider{
-                width:calc(100% - 200px); height:100%;
+                width:100%; height:100%;
                 background-size:cover;  background-repeat: no-repeat;
-                float:right;
             }
 
-            .section{
-                width:calc(100% - 200px); height:auto;
-                float:right;
+             /* 포스터 사진, 프로그램 소개 */
+            .program_show{
+                width:100%; height:250px;
+                color:#e5e5e5;
+                font-family: 'GowunBatang-Regular'; font-size:30px;
+                text-align: center;
+                line-height:250px;
+                margin:0 auto;
             }
-
-            /* 포스터 사진, 프로그램 소개 */
 
             .poster_box{
                 width:100%; height:auto;
             }
 
             .poster_show{
-                width:100%;
-                height:300px;
+                width:100%; height:300px;
                 color:#e5e5e5;
-                font-family: 'YeolrinGothic-Light'; font-size:20px;
+                font-family: 'YeolrinGothic-Light'; font-size:1em;
                 text-align: center;
                 display:flex; justify-content: center; align-items: center;
             }
 
             .poster_image_box{
-                width:100%; height:100vh;
+                width:100%; height:70vh;
                 box-sizing: border-box;
                 position:relative;
                 display:flex;
@@ -175,14 +178,13 @@
                 transition:0.5s;
             }
 
-
             /* 프로그램 정보 */
             .program_show{
-                width:100%; height:30vh;
+                width:100%; height:250px;
                 color:#e5e5e5;
                 font-family: 'GowunBatang-Regular'; font-size:30px;
                 text-align: center;
-                line-height:300px;
+                line-height:250px;
                 margin:0 auto;
             }
 
@@ -196,13 +198,13 @@
             .infor2,
             .infor3,
             .infor4{
-                width:80%;
-                height:150px;
+                width:100%;
+                height:100px;
                 display:flex;
                 margin:0 auto;
             }
             .infor{
-                height:230px;
+                height:200px;
             }
 
             .infor h1,
@@ -210,7 +212,7 @@
             .infor3 h1,
             .infor4 h1{
                 width:20%;
-                font-family: 'YeolrinGothic-Light'; font-size:23px;
+                font-family: 'YeolrinGothic-Light'; font-size:17px;
                 color:gray;
                 text-align: center;
             }
@@ -219,21 +221,18 @@
             .infor2 h2,
             .infor3 h2,
             .infor4 h2{
-                width:70%;
-                height:100%;
-                height:auto;
-                font-family: 'YeolrinGothic-Light'; font-size:20px; font-weight: normal;
-                color:#e5e5e5;  
+                width:77%;
+                font-family: 'YeolrinGothic-Light'; font-size:15px; font-weight: normal;
+                color:#e5e5e5;
             }
-
 
             /* 등장인물 소개 */
             .character_show{
-                width:100%; height:300px;
+                width:100%; height:250px;
                 color:#e5e5e5;
                 font-family: 'GowunBatang-Regular'; font-size:30px;
                 text-align: center;
-                line-height:300px;
+                line-height:250px;
                 margin:0 auto;
             }
 
@@ -245,7 +244,7 @@
             .character1,
             .character2,
             .character3{
-                width:70vw; height:500px;
+                width:100%; height:auto;
                 margin:0 auto;
                 display:flex; align-items: center;
             }
@@ -253,34 +252,35 @@
             .character1_text,
             .character2_text,
             .character3_text{
-                padding:30px;
+                width:70%;
+                padding:20px;
             }
 
             .character1 span,
             .character2 span,
             .character3 span{
                 color:#890c35;
-                font-size:2em; font-family: 'GowunBatang-Regular'; font-weight: bold;
+                font-size:25px; font-family: 'GowunBatang-Regular'; font-weight: bold;
             }
             .character1 span:nth-of-type(2),
             .character2 span:nth-of-type(2),
             .character3 span:nth-of-type(2){
-                font-size:1em; font-family: 'YeolrinGothic-Light';
+                font-size:20px; font-family: 'YeolrinGothic-Light';
                 color:gray;
             }
 
             .character1 h1,
             .character2 h1,
             .character3 h1{
-                font-size:1em; font-family: 'YeolrinGothic-Light'; font-weight:normal;
+                font-size:15px; font-family: 'YeolrinGothic-Light'; font-weight:normal;
                 color:#e5e5e5;
             }
 
             .character1 img,
             .character2 img,
             .character3 img{
+                width:40%;
                 transition:.5s cubic-bezier(0.25, 1, 0.5, 1);
-                width:45vw; height:50vh;
             }
 
             .character1 img:hover,
@@ -296,32 +296,31 @@
 
             /* 예고편 */
             .notice_show{
-                width:100%; height:30vh;
+                width:100%; height:250px;
                 color:#e5e5e5;
                 font-family: 'GowunBatang-Regular'; font-size:30px;
                 text-align: center;
-                line-height:300px;
+                line-height:250px;
                 margin:0 auto;
             }
             
             .notice_video{
-                width:100%; height:350px;
-                display:flex; justify-content: center;
+                width:100%; height:auto;
+                display:flex; flex-flow:row wrap;
                 margin:0 auto;
             }
 
             .notice1,
             .notice2{
-                width:35vw; height:35vh;
+                width:48%; height:350px;
                 cursor: pointer;
                 position:relative;
-                margin:2%
+                margin:0 auto;
             }
 
             .notice1_text,
             .notice2_text{
-                width:35vw;
-                font-family: 'YeolrinGothic-Light'; font-size:1em;
+                font-family: 'YeolrinGothic-Light'; font-size:17px;
                 color:#e5e5e5;
                 text-align: center;
                 margin-top:20px;
@@ -329,7 +328,7 @@
 
             .notice1_photo,
             .notice2_photo{
-                width:35vw; height:25vh;
+                width:100%; height:250px;
                 transition:all 0.3s;
             }
 
@@ -344,16 +343,16 @@
             /* 예고편 동영상 모달 */
             .notice1_modal,
             .notice2_modal{
-                width:calc(100% - 200px); height:100%;
+                width:100vw; height:100vh;
                 backdrop-filter: blur(5px);
-                position:fixed; top:55%; left:68%;
+                position:fixed; top:50%; left:50%;
                 transform: translate(-50%, -50%);
                 display:none;
             }
 
             .notice1_modal_content,
             .notice2_modal_content{
-                width:1200px; height:800px;
+                width:100%; height:100%;
                 position:absolute;
             }
 
@@ -362,14 +361,13 @@
                 width:100%; height:100%;
             }
 
-
-            /* 클립 영상 */
+             /* 클립 영상 */
             .clip_video_show{
-                width:100%; height:30vh;
+                width:100%; height:250px;
                 color:#e5e5e5;
                 font-family: 'GowunBatang-Regular'; font-size:30px;
                 text-align: center;
-                line-height:300px;
+                line-height:250px;
                 margin:0 auto;
             }
 
@@ -387,7 +385,7 @@
             .clip6,
             .clip7,
             .clip8{
-                width:20vw; height:30vh;
+                width:48%; height:auto;
             }
 
             .clip1 img,
@@ -398,7 +396,7 @@
             .clip6 img,
             .clip7 img,
             .clip8 img{
-                width:20vw; height:80%;
+                width:100%; height:100%;
                 transition:all 0.3s;
             }
 
@@ -421,10 +419,10 @@
             .clip6_text,
             .clip7_text,
             .clip8_text{
-                width:20vw; height:50px;
+                height:100px;
                 color:#e5e5e5;
-                font-family: 'YeolrinGothic-Light'; font-size:1em;
-                display:flex; align-items: center; justify-content: center;
+                font-family: 'YeolrinGothic-Light'; font-size:14px;
+                display:Flex; justify-content: center; align-items: center;
             }
 
             .clip1 a,
@@ -438,34 +436,27 @@
                 text-decoration: none;
             }
 
-
-            /* 회차 정보 */
+             /* 회차 정보 */
             .again_show{
-                width:100%; height:30vh;
+                width:100%; height:250px;
                 color:#e5e5e5;
                 font-family: 'GowunBatang-Regular'; font-size:30px;
                 text-align: center;
-                line-height:300px;
+                line-height:250px;
                 margin:0 auto;
             }
 
             .again_video{
-                width:80%; height:auto;
+                width:100%; height:auto;
                 margin:0 auto;
             }
 
             .one,
             .two,
             .three{
-                width:80%; height:265px; 
-                display:flex; flex-flow:column wrap; justify-content: center; align-items: center;
+                width:55%; height:auto;
+                display:flex; flex-flow:column wrap; justify-content: center;
                 margin:0 auto;
-            }
-
-            .one img,
-            .two img,
-            .three img{
-                width:25vw; height:25vh;
             }
 
             .one:hover,
@@ -473,10 +464,12 @@
             .three:hover{
                 background-color:#131313;
             }
+
             .again1_text,
             .again2_text,
             .again3_text{
-                width:55%;
+                width:100%; height:auto;
+                display:flex; justify-content: center; align-items: center; flex-flow:column wrap;
             }
             .one h1,
             .two h1,
@@ -496,19 +489,19 @@
 
             /* 회차 정보 모달 */
             .again_video_modal{
-                width:1020px; height:100%;
+                width:75%; height:100%;
                 position:fixed; z-index:55; top:50%; left:55%;
                 transform: translate(-50%, -50%);
                 background-color:black;
                 overflow: hidden;
-                overflow-y: initial;
+                overflow-y: initial !important;
                 display:none;
             }
 
             .agian_video_modal_content{
-                width:1000px; height:100%;
+                width:100%; height:auto;
                 color:#e5e5e5;
-                overflow: scroll;
+                overflow-y: scroll;
                 position:relative;
             }
 
@@ -520,12 +513,12 @@
 
             .st2{
                 color:#e5e5e5;
-                font-family:'YeolrinGothic-Light';
+                font-family:'YeolrinGothic-Light'; font-size:18px;
                 padding:30px;
             }
 
             .st1{
-                width:1000px; height:50%;
+                width:100%; height:45%;
             }
 
             .again4_text_modal,
@@ -536,10 +529,10 @@
             .again9_text_modal,
             .again10_text_modal,
             .again11_text_modal{
-                width:950px; height:150px;
+                width:100%; height:150px;
                 font-family:'YeolrinGothic-Light';
                 color:#e5e5e5;
-                display:flex; flex-flow:column wrap; justify-items: center; align-items: center;
+                display:flex; flex-flow:column wrap;
                 margin:0 auto; margin-bottom:20px;
                 transition:0.2s;
                 position:relative;
@@ -564,7 +557,7 @@
             .again9_image,
             .again10_image,
             .again11_image{
-                width:230px; height:150px;
+                width:35%; height:150px;
                 transition:0.5s;
             }
 
@@ -576,7 +569,7 @@
             .again9_image img,
             .again10_image img,
             .again11_image img{
-                width:230px; height:150px;
+                width:100%; height:150px;
             }
 
             .again4play,
@@ -594,9 +587,9 @@
             }
 
             .text4modal{
-                width:700px; height:150px;
+                width:60%; height:147px;
                 display:Flex; flex-flow:column wrap; justify-content: space-evenly;
-                padding:20px;
+                padding:3%;
                 cursor:pointer;
             }
 
@@ -626,34 +619,33 @@
 
             /* 최신 뉴스 */
             .special_show{
-                width:100%; height:30vh;
+                width:100%; height:250px;
                 color:#e5e5e5;
                 font-family: 'GowunBatang-Regular'; font-size:30px;
                 text-align: center;
-                line-height:300px;
+                line-height:250px;
                 margin:0 auto;
             }
 
             .special_video{
-                width:80%; height:auto;
+                width:100%; height:auto;
                 margin:0 auto;
-                display:flex; flex-flow:row wrap; align-items: center; justify-content: center;
+                display:flex; flex-flow:row wrap; align-items: center; 
             }
 
             .special_video a{
                 text-decoration: none;
-                width:34vw; height:25vh;
             }
-            
+
             .news1,
             .news2,
             .news3,
             .news4,
             .news5,
             .news6{
-                width:34vw; height:220px;
-                display:flex; flex-flow:column wrap; justify-content: center; align-items: center;
-                margin-bottom:3%;
+                width:85%; height:auto;
+                display:flex; justify-content: center; align-items: center;
+                margin:0 auto; margin-bottom:20px;
             }
 
             .news1:hover,
@@ -671,7 +663,8 @@
             .news4 img,
             .news5 img,
             .news6 img{
-                width:12vw; height:100%;
+                width:30%;
+                padding:3%;
             }
 
             .news1_text,
@@ -680,11 +673,11 @@
             .news4_text,
             .news5_text,
             .news6_text{
-                width:20vw; height:100%;
+                width:50%; height:50%;
                 color:#e5e5e5;
                 font-family: 'YeolrinGothic-Light';
-                display:flex; flex-flow:row wrap; align-items: center;
-                
+                display:flex; flex-flow:column wrap; justify-content: center;
+                padding:3%;
             }
 
             .news1_text h2,
@@ -700,8 +693,8 @@
             .news5_text h3,
             .news6_text h3{
                 font-weight: normal;
-                font-size:1em;
-                padding-top:2%;
+                font-size:15px;
+                padding-top:10px;
             }
 
             .news1_text h1,
@@ -711,22 +704,22 @@
             .news5_text h1,
             .news6_text h1{
                 color:#e5e5e5;
-                font-size:1.2em;
+                font-size:18px;
             }
-            
+
 
             /* 사진첩 */
             .photo_show{
-                width:100%; height:30vh;
+                width:100%; height:250px;
                 color:#e5e5e5;
                 font-family: 'GowunBatang-Regular'; font-size:30px;
                 text-align: center;
-                line-height:300px;
+                line-height:250px;
                 margin:0 auto;
             }
 
             .photo_box{
-                width:80%; height:auto;
+                width:100%; height:auto;
                 margin:0 auto;
                 display:flex; flex-flow:row wrap; justify-content: center;
                 margin-bottom:100px;
@@ -746,8 +739,9 @@
             .modal6,
             .modal7,
             .modal8{
-                width:calc(100% - 200px); height:100%;
-                position:fixed; top:57%; left:57%; z-index:55;
+                width:100%; height:70%;
+                backdrop-filter: blur(12px);
+                position:fixed; top:50%; left:50%; z-index:55;
                 transform: translate(-50%, -50%);
                 display:none;
             }
@@ -761,8 +755,7 @@
             .modal_content6,
             .modal_content7,
             .modal_content8{
-                width:1200px; height:800px;
-                position:absolute; left:12%;
+                width:100%; height:100%;
             }
 
             .modal_content img,
@@ -786,7 +779,7 @@
             .src7,
             .src8,
             .src9{
-                width:20vw; height:40vh;
+                width:30%; height:30%;
                 margin: 5px;
                 position:relative;
                 text-align: center;
@@ -815,26 +808,27 @@
             .src7_text,
             .src8_text,
             .src9_text{
-                width:390px; height:390px;
+                width:100%; height:30%;
                 text-align: center;
                 color:#e5e5e5;
-                position:absolute; top:45%;
+                position:absolute; top:45%; left:2%;
                 display:none;
+                font-size:13px;
             }
-
+            
             footer{
-                width: calc(100% - 200px); height:auto;
-                margin:0 auto; 
+                width:100%; height:auto;
+                float:right;
             }
 
             .company{
-                width:80%;
+                width:100%;
                 margin:0 auto;
                 display:Flex; justify-content: space-evenly;
             }
 
             .company img{
-                width:15vw; height:30vh;
+                width:150px; height:150px;
             }
 
             .company_text{
@@ -844,7 +838,7 @@
             }
 
             .company_text h1{
-                font-size:16px;
+                font-size:15px;
                 padding-bottom:5px;
             }
 
@@ -855,19 +849,3 @@
             }
 
         }
-        
- 
-        
-
-        
-
-
-
-
-        
-
-
-        
-        
-        
-        

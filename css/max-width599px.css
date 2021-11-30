@@ -4,33 +4,62 @@
 
 @media(max-width:599px){
     .menu_icon{
-        width:200px;
+        width:50vw; height:40px;
         margin:0;
-        filter: invert(1);
         cursor: pointer;
+        
     }
 
     .menu_icon img{
-        width:30px; height:30px;
+        width:40px; height:40px;
+        filter:invert(1)
+    }
+
+    
+    .menu_icon.active{
+        filter: invert(0);
     }
 
     header{
-        width:100%; height:30px;
-        position:absolute; z-index:10;
-        opacity:0.7;
+        width:50vw; height:40px;
+        position:fixed; z-index:10;
     }
 
     .main_menu{
-        width:100%; height:60%;
+        width:50vw; height:100vh;
+        background-color:white;
         display:none;
     }
 
     .main_menu li a{
-        color:#e5e5e5;
+        color:#131313; background-color:white;
         text-decoration: none;
-        font-family: 'YeolrinGothic-Light'; font-weight: normal; font-size:13px;
+        font-family: 'YeolrinGothic-Light'; font-size:13px;
         padding:15px;
         display:block;
+    }
+
+    .a1{
+        border-bottom:1px solid #131313;
+        font-weight:bold;
+    }
+
+    .a2{
+        border-top:1px solid #131313;
+        border-bottom:1px solid #131313;
+        font-weight:bold;
+    }
+
+    .a3{
+        border-top:1px solid #131313;
+        border-bottom:1px solid #131313;
+        font-weight:bold;
+    }
+
+    .a4{
+        border-top:1px solid #131313;
+        border-bottom:1px solid #131313;
+        font-weight:bold;
     }
 
     .main_menu li ul li{
@@ -51,10 +80,26 @@
     }
 
     .main_menu li ul li a:hover{
-        background-color:#6c6c6c; color:black;
+        background-color:lightgray; color:black;
     }
     .main_menu li ul li a{
         border-left:1px solid gray;
+    }
+
+    .icon_menu{
+        width:30px;
+        margin-top:50px;
+        cursor:pointer;
+        padding-left:15px;
+    }
+
+    .icon_menu img:hover{
+        filter:opacity(0.5) drop-shadow(0 0 0 white);
+    }
+
+    .icon_menu img{
+        width:30px; height:30px;
+        margin-bottom:5px;
     }
 
     /* 각 섹션 소제목 */
@@ -143,7 +188,7 @@
     .program_show{
         width:100%; height:250px;
         color:#e5e5e5;
-        font-family: 'GowunBatang-Regular'; font-size:30px;
+        font-family: 'GowunBatang-Regular'; font-size:23px;
         text-align: center;
         line-height:250px;
         margin:0 auto;
@@ -191,7 +236,7 @@
      .character_show{
         width:100%; height:250px;
         color:#e5e5e5;
-        font-family: 'GowunBatang-Regular'; font-size:30px;
+        font-family: 'GowunBatang-Regular'; font-size:23px;
         text-align: center;
         line-height:250px;
         margin:0 auto;
@@ -258,7 +303,7 @@
     .notice_show{
         width:100%; height:250px;
         color:#e5e5e5;
-        font-family: 'GowunBatang-Regular'; font-size:30px;
+        font-family: 'GowunBatang-Regular'; font-size:23px;
         text-align: center;
         line-height:250px;
         margin:0 auto;
@@ -279,7 +324,7 @@
 
     .notice1_text,
     .notice2_text{
-        font-family: 'YeolrinGothic-Light'; font-size:17px;
+        font-family: 'YeolrinGothic-Light'; font-size:14px;
         color:#e5e5e5;
         text-align: center;
         margin-top:20px;
@@ -324,7 +369,7 @@
     .clip_video_show{
         width:100%; height:250px;
         color:#e5e5e5;
-        font-family: 'GowunBatang-Regular'; font-size:30px;
+        font-family: 'GowunBatang-Regular'; font-size:23px;
         text-align: center;
         line-height:250px;
         margin:0 auto;
@@ -400,7 +445,7 @@
      .again_show{
         width:100%; height:250px;
         color:#e5e5e5;
-        font-family: 'GowunBatang-Regular'; font-size:30px;
+        font-family: 'GowunBatang-Regular'; font-size:23px;
         text-align: center;
         line-height:250px;
         margin:0 auto;
@@ -516,7 +561,7 @@
     .again9_image,
     .again10_image,
     .again11_image{
-        width:100%; height:auto;
+        width:80%; height:auto;
         transition:0.5s;
     }
 
@@ -581,7 +626,7 @@
      .special_show{
         width:100%; height:250px;
         color:#e5e5e5;
-        font-family: 'GowunBatang-Regular'; font-size:30px;
+        font-family: 'GowunBatang-Regular'; font-size:23px;
         text-align: center;
         line-height:250px;
         margin:0 auto;
@@ -603,9 +648,9 @@
     .news4,
     .news5,
     .news6{
-        width:100%; height:200px;
-        display:flex; 
-        margin-bottom:20px;
+        width:100%; height:auto;
+        display:flex;
+        margin:0 auto; margin-bottom:20px; 
     }
 
     .news1:hover,
@@ -670,7 +715,7 @@
     .photo_show{
         width:100%; height:250px;
         color:#e5e5e5;
-        font-family: 'GowunBatang-Regular'; font-size:30px;
+        font-family: 'GowunBatang-Regular'; font-size:23px;
         text-align: center;
         line-height:250px;
         margin:0 auto;
@@ -680,7 +725,7 @@
         width:100%; height:auto;
         margin:0 auto;
         display:flex; flex-flow:row wrap; justify-content: center;
-        margin-bottom:100px;
+        margin-bottom:80px;
     }
 
     .photo_box a{
@@ -697,7 +742,7 @@
     .modal6,
     .modal7,
     .modal8{
-        width:85%; height:70%;
+        width:100%; height:55%;
         backdrop-filter: blur(12px);
         position:fixed; top:50%; left:50%; z-index:55;
         transform: translate(-50%, -50%);
@@ -737,7 +782,7 @@
     .src7,
     .src8,
     .src9{
-        width:390px; height:390px;
+        width:30%; height:30%;
         margin: 5px;
         position:relative;
         text-align: center;
@@ -766,11 +811,12 @@
     .src7_text,
     .src8_text,
     .src9_text{
-        width:390px; height:390px;
+        width:100%; height:30%;
         text-align: center;
         color:#e5e5e5;
-        position:absolute; top:45%;
+        position:absolute; top:35%; left:2%;
         display:none;
+        font-size:13px;
     }
     
     footer{
@@ -785,7 +831,7 @@
     }
 
     .company img{
-        width:150px; height:150px;
+        width:120px; height:120px;
     }
 
     .company_text{
@@ -795,7 +841,7 @@
     }
 
     .company_text h1{
-        font-size:15px;
+        font-size:13px;
         padding-bottom:5px;
     }
 

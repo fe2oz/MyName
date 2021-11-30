@@ -11,3 +11,10 @@ $(window).resize(function(){
         $('.main_menu').show();
     }
 });
+
+$(function(){
+    $('.menu_icon').on('click', function(){
+        $('header').css("backgroundColor", "white");
+        $('.menu_icon').css("filter", "invert", "0.5")
+    })
+});
