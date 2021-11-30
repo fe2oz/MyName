@@ -7,7 +7,11 @@
         width:50vw; height:40px;
         margin:0;
         cursor: pointer;
-        
+    } 
+
+    .clo{
+        display:none;
+        position:absolute; right:0;
     }
 
     .menu_icon img{
@@ -15,14 +19,10 @@
         filter:invert(1)
     }
 
-    
-    .menu_icon.active{
-        filter: invert(0);
-    }
-
     header{
         width:50vw; height:40px;
         position:fixed; z-index:10;
+        
     }
 
     .main_menu{

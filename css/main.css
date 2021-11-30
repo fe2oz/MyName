@@ -12,11 +12,7 @@
             overflow:auto;
         }
         
-        body.s_no-scroll{overflow-y:hidden;}
-
-        body.modal-open {
-            overflow: hidden;
-        }
+ 
 
         *{box-sizing: border-box;}
 
@@ -280,7 +276,7 @@
             .character2 img,
             .character3 img{
                 transition:.5s cubic-bezier(0.25, 1, 0.5, 1);
-                width:45vw; height:50vh;
+                width:35vw; height:50vh;
             }
 
             .character1 img:hover,
@@ -344,16 +340,16 @@
             /* 예고편 동영상 모달 */
             .notice1_modal,
             .notice2_modal{
-                width:calc(100% - 200px); height:100%;
+                width:100vw; height:100%;
                 backdrop-filter: blur(5px);
-                position:fixed; top:55%; left:68%;
+                position:fixed; top:55%; left:75%;
                 transform: translate(-50%, -50%);
                 display:none;
             }
 
             .notice1_modal_content,
             .notice2_modal_content{
-                width:1200px; height:800px;
+                width:60vw; height:80vh;
                 position:absolute;
             }
 
@@ -496,7 +492,7 @@
 
             /* 회차 정보 모달 */
             .again_video_modal{
-                width:1020px; height:100%;
+                width:60vw; height:100%;
                 position:fixed; z-index:55; top:50%; left:55%;
                 transform: translate(-50%, -50%);
                 background-color:black;
@@ -506,7 +502,7 @@
             }
 
             .agian_video_modal_content{
-                width:1000px; height:100%;
+                width:60vw; height:100%;
                 color:#e5e5e5;
                 overflow: scroll;
                 position:relative;
@@ -522,10 +518,11 @@
                 color:#e5e5e5;
                 font-family:'YeolrinGothic-Light';
                 padding:30px;
+                font-size:2em;
             }
 
             .st1{
-                width:1000px; height:50%;
+                width:60vw; height:50%;
             }
 
             .again4_text_modal,
@@ -536,7 +533,7 @@
             .again9_text_modal,
             .again10_text_modal,
             .again11_text_modal{
-                width:950px; height:150px;
+                width:60vw; height:18vh;
                 font-family:'YeolrinGothic-Light';
                 color:#e5e5e5;
                 display:flex; flex-flow:column wrap; justify-items: center; align-items: center;
@@ -564,7 +561,7 @@
             .again9_image,
             .again10_image,
             .again11_image{
-                width:230px; height:150px;
+                width:20vw; height:150px;
                 transition:0.5s;
             }
 
@@ -576,7 +573,7 @@
             .again9_image img,
             .again10_image img,
             .again11_image img{
-                width:230px; height:150px;
+                width:100%; height:100%;
             }
 
             .again4play,
@@ -587,14 +584,14 @@
             .again9play,
             .again10play,
             .again11play{
-                width:50px; height:50px;
+                width:4vw; height:5vh;
                 filter: invert(1);
-                position:absolute; left:10%; top:35%;
+                position:absolute; left:13%; top:33%;
                 display:none;
             }
 
             .text4modal{
-                width:700px; height:150px;
+                width:40vw; height:100%;
                 display:Flex; flex-flow:column wrap; justify-content: space-evenly;
                 padding:20px;
                 cursor:pointer;
@@ -642,7 +639,7 @@
 
             .special_video a{
                 text-decoration: none;
-                width:34vw; height:25vh;
+                
             }
             
             .news1,
@@ -747,7 +744,7 @@
             .modal7,
             .modal8{
                 width:calc(100% - 200px); height:100%;
-                position:fixed; top:57%; left:57%; z-index:55;
+                position:fixed; top:57%; left:50%; z-index:55;
                 transform: translate(-50%, -50%);
                 display:none;
             }
@@ -761,7 +758,7 @@
             .modal_content6,
             .modal_content7,
             .modal_content8{
-                width:1200px; height:800px;
+                width:80%; height:80vh;
                 position:absolute; left:12%;
             }
 
@@ -786,8 +783,8 @@
             .src7,
             .src8,
             .src9{
-                width:20vw; height:40vh;
-                margin: 5px;
+                width:18vw; height:40vh;
+                margin: 1%;
                 position:relative;
                 text-align: center;
                 cursor: pointer;
@@ -815,15 +812,15 @@
             .src7_text,
             .src8_text,
             .src9_text{
-                width:390px; height:390px;
+                width:18vw; height:40vh;
                 text-align: center;
                 color:#e5e5e5;
                 position:absolute; top:45%;
-                display:none;
+                display:none; font-size:1em;
             }
 
             footer{
-                width: calc(100% - 200px); height:auto;
+                width: 100%; height:auto;
                 margin:0 auto; 
             }
 

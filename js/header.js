@@ -3,6 +3,14 @@
 $(function(){
     $('.test').click(function(){
         $('.main_menu').slideToggle();
+        $('.test').hide();
+        $('.clo').show(), css("backgroundColor", "white");
+    })
+
+    $('.clo').click(function(){
+        $('.main_menu').slideToggle();
+        $('.test').show();
+        $('.clo').hide();
     })
 });
 
@@ -12,9 +20,3 @@ $(window).resize(function(){
     }
 });
 
-$(function(){
-    $('.menu_icon').on('click', function(){
-        $('header').css("backgroundColor", "white");
-        $('.menu_icon').css("filter", "invert", "0.5")
-    })
-});
