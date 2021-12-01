@@ -95,6 +95,10 @@
                 filter:invert(1)
             }
 
+            .a1, .a2, .a3, .a4{
+                background-color:#07273c;
+            }
+
             /* 각 섹션 소제목 */
             .all,
             .all_1{

@@ -9,19 +9,16 @@
                 margin:0;
                 cursor: pointer;
                 display:inline-block;
-                background-color:black;
             }
 
-            .menu_icon.active{
-                background-color:white;
-            }
-        
             .menu_icon img{
                 width:40px; height:40px;
                 filter:invert(1)
             }
-            .menu_icon img.active{
-                filter:invert(0) drop-shadow(0 0 0 black);
+
+            .clo{
+                position:absolute; right:0;
+                display:none;
             }
         
             header{
@@ -45,25 +42,25 @@
             }
         
             .a1{
-                border-bottom:1px solid #131313;
+                border-bottom:1px solid #1b4d70;
                 font-weight:bold;
             }
         
             .a2{
-                border-top:1px solid #131313;
-                border-bottom:1px solid #131313;
+                border-top:1px solid #1b4d70;
+                border-bottom:1px solid #1b4d70;
                 font-weight:bold;
             }
         
             .a3{
-                border-top:1px solid #131313;
-                border-bottom:1px solid #131313;
+                border-top:1px solid #1b4d70;
+                border-bottom:1px solid #1b4d70;
                 font-weight:bold;
             }
         
             .a4{
-                border-top:1px solid #131313;
-                border-bottom:1px solid #131313;
+                border-top:1px solid #1b4d70;
+                border-bottom:1px solid #1b4d70;
                 font-weight:bold;
             }
         
